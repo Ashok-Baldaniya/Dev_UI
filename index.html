@@ -13,38 +13,294 @@
     <nav id="navbar" class="navbar">
         <img src="/assets/images/Dev_Homeopathy_Logo_1.webp" alt="Clinic Logo" class="logo" id="logo">
         <ul class="nav-menu" id="nav-menu">
-            <li><a href="" class="nav-item active">Home</a></li>
-            <li><a href="" class="nav-item">About</a></li>
-            <li><a href="" class="nav-item">Services</a></li>
-            <li><a href="" class="nav-item">Contact</a></li>
-            <li><a href="" class="nav-item cta">Book Appointment</a></li>
+            <li><a href="#home" class="nav-item active">Home</a></li>
+            <li><a href="#specialty" class="nav-item">Specialty</a></li>
+            <li><a href="#about" class="nav-item">About</a></li>
+            <li><a href="#services" class="nav-item">Services</a></li>
+            <li><a href="#contact" class="nav-item">Contact</a></li>
+            <li><a href="#bookappointment" class="nav-item cta">Book Appointment</a></li>
         </ul>
     </nav>
 
-    <div class="naturalbackground" id="naturalbackground">
-        <img src="/assets/images/homeopathy 1.jpg" alt="Natural Homeopathy">
-        <h1 class="naturaltext">Best Homeopathy Clinic</h1>
-    </div>
+    <section id="home">
+        <div class="naturalbackground" id="naturalbackground">
+            <img src="/assets/images/homeopathy 1.jpg" alt="Natural Homeopathy">
+            <h1 class="naturaltext">Transform your health the natural way</h1>
+        </div>
+    </section>
 
-    <script>
-        window.addEventListener('scroll', () => {
-            const navbar = document.getElementById('navbar');
-            if (window.scrollY > 50) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
-            }
-        });
+    <section id="specialty">
+        <div class="container">
+            <h2>Our Specialty</h2>
 
-        document.querySelectorAll('.nav-item').forEach(item => {
-            item.addEventListener('click', (e) => {
-                document.querySelectorAll('.nav-item').forEach(nav => nav.classList.remove('active'));
-                e.target.classList.add('active');
-            });
-        });
-    </script>
+            <div class="specialty-intro">
+                <div class="quote">
+                    "For patients suffering for a long time and who have already consulted many doctors without success,
+                    homeopathy is a ray of hope."
+                </div>
+            </div>
+
+            <div class="specialty-conditions">
+                <div class="condition-item">
+                    <div class="condition-title">Mental Disorders</div>
+                    <p class="condition-desc">Treatment is available for conditions like depression, insomnia, anxiety,
+                        panic, strange thoughts, phobias, addictions, poor memory, etc.</p>
+                </div>
+
+                <div class="condition-item">
+                    <div class="condition-title">Kidney Problems</div>
+                    <p class="condition-desc">Non-surgical treatment for kidney stones, burning sensation during
+                        urination, prostate problems, kidney failure, etc.</p>
+                </div>
+
+                <div class="condition-item">
+                    <div class="condition-title">Stomach Issues</div>
+                    <p class="condition-desc">Constipation, gas, acidity, liver disorders, piles, fistula, IBS, chronic
+                        indigestion, intestinal issues, ulcers, etc.</p>
+                </div>
+
+                <div class="condition-item">
+                    <div class="condition-title">Migraine</div>
+                    <p class="condition-desc">Pain on one side of the head, intense and long-lasting headaches.</p>
+                </div>
+
+                <div class="condition-item">
+                    <div class="condition-title">Chronic Stubborn Diseases</div>
+                    <p class="condition-desc">Allergies, chronic asthma, migraine.</p>
+                </div>
+
+                <div class="condition-item">
+                    <div class="condition-title">Children's Diseases</div>
+                    <p class="condition-desc">Frequent colds and coughs, asthma, bedwetting, loss of appetite, worms,
+                        eating mud, growth delay, stammering, convulsions, etc.</p>
+                </div>
+
+                <div class="condition-item">
+                    <div class="condition-title">Joint Disorders</div>
+                    <p class="condition-desc">Joint pain, sciatica, spinal disc problems, bone spurs, arthritis, bone
+                        degeneration and weakness, etc.</p>
+                </div>
+
+                <div class="condition-item">
+                    <div class="condition-title">Skin Diseases</div>
+                    <p class="condition-desc">Psoriasis, eczema, itching, hair fall, fungal infections, warts, cracked
+                        heels, vitiligo, dark spots, ringworm, etc.</p>
+                </div>
+
+                <div class="condition-item">
+                    <div class="condition-title">Male Health Issues</div>
+                    <p class="condition-desc">Physical weakness, low sperm count, prostate problems, etc.</p>
+                </div>
+
+                <div class="condition-item">
+                    <div class="condition-title">Female Health Issues</div>
+                    <p class="condition-desc">Infertility, uterine disorders, menstrual problems, white discharge,
+                        uterine fibroids, PCOD, pregnancy-related complications, etc.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Our Practice</h2>
+
+            <div class="about-grid">
+                <div>
+                    <h3>Dr. Prakash Baldaniya</h3>
+                    <p><strong>B.H.M.S. , C.C.H. - Consultant Homeopath</strong></p>
+                    <p>Qualified Homeopath with over 5 years of experience</p>
+                </div>
+
+                <div class="about-qualifications why-choose">
+                    <h3>Why Choose Homeopathy?</h3>
+                    <ul>
+                        <li>Safe and natural remedies</li>
+                        <li>No harmful side effects</li>
+                        <li>Treats root causes, not just symptoms</li>
+                        <li>Suitable for all ages</li>
+                        <li>Personalized treatment plans</li>
+                        <li>Boosts natural immunity</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- What is Homeopathy Section -->
+            <div class="homeopathy-info">
+                <h3>What is Homeopathy?</h3>
+                <div class="homeopathy-points">
+                    <p>Homeopathy is a highly advanced medical system that enables treatment from the root cause of the
+                        disease.</p>
+                    <p>Homeopathic medicines are prescribed based on the patient's physical and mental state.</p>
+                    <p>After thoroughly understanding the individual, the medicine that matches the person's
+                        constitution is selected.</p>
+                    <p>Many illnesses are also caused by mental stress or issues.</p>
+                </div>
+
+                <div class="highlight-quote">
+                    When your thoughts can't be expressed outwardly, they often manifest as diseases in the body.
+                </div>
+            </div>
+
+            <!-- How Does It Work Section -->
+            <div class="how-it-works">
+                <h3>How Does It Work?</h3>
+                <ul class="work-points">
+                    <li>Homeopathic medicine does not suppress symptoms temporarily but gradually eliminates the disease
+                        from its root.</li>
+                    <li>It also considers the patient's mental condition in deciding the right treatment.</li>
+                    <li>Homeopathy has proven effective in halting hereditary diseases.</li>
+                    <li>It is suitable for everyone — from children to the elderly.</li>
+                    <li>It is especially successful for conditions requiring long-term medication, as homeopathy has no
+                        side effects and works gently to eradicate the disease from its root.</li>
+                </ul>
+
+                <p><strong>Examples:</strong> Liver disorders, kidney problems, thyroid, migraine, arthritis, and skin
+                    diseases.</p>
+
+                <div class="key-benefits">
+                    <div class="benefit-card">
+                        <h4>No Side Effects</h4>
+                        <p>Homeopathic medicine has no side effects and is completely safe for all ages.</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <h4>Non-Surgical Treatment</h4>
+                        <p>Problems like kidney stones, fungal infections, piles, and uterine fibroids can be cured
+                            without surgery.</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <h4>Root Cause Treatment</h4>
+                        <p>Treats the underlying cause of disease rather than just suppressing symptoms.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <p style="text-align: center; font-size: 1.6rem; margin-bottom: 40px; font-weight: 500;">
+                Comprehensive homeopathic treatment for various health conditions
+            </p>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Digestive Disorders</h3>
+                    <p>Treatment for IBS, acidity, constipation, gastritis, and other digestive issues through natural
+                        remedies.</p>
+                </div>
+
+                <div class="service-card">
+                    <h3>Respiratory Problems</h3>
+                    <p>Effective treatment for asthma, allergies, cough, cold, sinusitis, and bronchitis.</p>
+                </div>
+
+                <div class="service-card">
+                    <h3>Skin Conditions</h3>
+                    <p>Natural healing for eczema, psoriasis, acne, dermatitis, and other skin disorders.</p>
+                </div>
+
+                <div class="service-card">
+                    <h3>Women's Health</h3>
+                    <p>Specialized care for menstrual disorders, PCOS, menopause, pregnancy-related issues.</p>
+                </div>
+
+                <div class="service-card">
+                    <h3>Children's Health</h3>
+                    <p>Safe, gentle treatment for behavioral issues, growth problems, recurring infections in children.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <h3>Chronic Conditions</h3>
+                    <p>Long-term management of diabetes, hypertension, arthritis, and autoimmune disorders.</p>
+                </div>
+
+                <div class="service-card">
+                    <h3>Mental & Emotional Health</h3>
+                    <p>Natural support for anxiety, depression, stress, insomnia, and mood disorders.</p>
+                </div>
+
+                <div class="service-card">
+                    <h3>Pain Management</h3>
+                    <p>Effective relief from joint pain, back pain, headaches, and muscular disorders.</p>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 50px;background: #f9f9f9; padding: 30px; border-radius: 10px;">
+                <h3>Treatment Process</h3>
+                <div
+                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-top: 30px;">
+                    <div style="text-align: center;">
+                        <div
+                            style="background: #4a7c59; color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px; font-size: 1.5rem; font-weight: bold;">
+                            1</div>
+                        <h4>Detailed Consultation</h4>
+                        <p>Complete case history and symptom analysis</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <div
+                            style="background: #4a7c59; color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px; font-size: 1.5rem; font-weight: bold;">
+                            2</div>
+                        <h4>Remedy Selection</h4>
+                        <p>Personalized homeopathic medicine prescription</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <div
+                            style="background: #4a7c59; color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px; font-size: 1.5rem; font-weight: bold;">
+                            3</div>
+                        <h4>Follow-up</h4>
+                        <p>Regular monitoring and treatment adjustment</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p style="text-align: center; font-size: 1.2rem; margin-bottom: 40px;">
+                Ready to start your natural healing journey? Get in touch with us today.
+            </p>
+
+            <div class="contact-info">
+                <div class="contact-card">
+                    <h3>📍 Address</h3>
+                    <p>[Your Clinic Address]<br>
+                        [City, State - PIN Code]</p>
+                </div>
+
+                <div class="contact-card">
+                    <h3>📞 Phone</h3>
+                    <p>+91 [Your Phone Number]</p>
+                    <p>Available: Mon-Sat, 9 AM - 6 PM</p>
+                </div>
+
+                <div class="contact-card">
+                    <h3>✉️ Email</h3>
+                    <p>[your.email@gmail.com]</p>
+                    <p>We'll respond within 24 hours</p>
+                </div>
+
+                <div class="contact-card">
+                    <h3>🕒 Clinic Hours</h3>
+                    <p>Monday - Friday: 9:00 AM - 6:00 PM<br>
+                        Saturday: 9:00 AM - 2:00 PM<br>
+                        Sunday: Closed</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section id="bookappointment">
+
+    </section> -->
+
+    <script src="./js/script.js"></script>
 </body>
-
-<script src="./js/script.js"></script>
 
 </html>
