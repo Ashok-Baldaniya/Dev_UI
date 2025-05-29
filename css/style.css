@@ -168,10 +168,6 @@ body {
     z-index: -1;
 }
 
-.naturalbackground ul {
-    list-style: circle;
-}
-
 /* .naturaltext {
     position: absolute;
     top: 50%;
@@ -190,7 +186,7 @@ body {
     text-align: center;
     z-index: 2;
     /* background: rgba(255, 255, 255, 0.9); */
-    padding: 10px 30px;
+    /* padding: 10px 30px; */
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(10px);
@@ -489,7 +485,7 @@ p {
 /* Specialty Section */
 .specialty-intro {
     background: linear-gradient(135deg, #f0f8f0, #e8f5e8);
-    padding: 40px;
+    padding: 20px;
     border-radius: 15px;
     margin-bottom: 50px;
     text-align: center;
@@ -501,7 +497,6 @@ p {
     font-style: italic;
     color: #2c5530;
     font-weight: 600;
-    margin-bottom: 20px;
     line-height: 1.4;
 }
 
@@ -561,6 +556,7 @@ p {
     margin-bottom: 15px;
     padding-left: 25px;
     position: relative;
+    font-size: 1.2rem;
 }
 
 .homeopathy-points p:before {
@@ -575,10 +571,10 @@ p {
 .highlight-quote {
     background: linear-gradient(135deg, #4a7c59, #2c5530);
     color: white;
-    padding: 25px;
+    padding: 15px;
     border-radius: 10px;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-style: italic;
     margin: 30px 0;
     position: relative;
@@ -656,7 +652,7 @@ p {
 
 .benefit-card {
     background: linear-gradient(135deg, #f0f8f0, #ffffff);
-    padding: 25px;
+    padding: 10px;
     border-radius: 10px;
     text-align: center;
     border: 2px solid #e8f5e8;
@@ -670,13 +666,13 @@ p {
 
 .benefit-card h4 {
     color: #2c5530;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     font-size: 1.1rem;
 }
 
 .benefit-card p {
     color: #666;
-    font-size: 0.95rem;
+    font-size: 1.1rem;
     margin: 0;
 }
 
@@ -685,7 +681,7 @@ p {
 }
 
 .specialty-intro .quote {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
 }
 
 .condition-item {
@@ -750,26 +746,52 @@ p {
 .description {
     font-size: 20px;
     font-weight: 600;
-    border: 1px solid;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
     border-radius: 20px;
     padding: 10px 20px;
     margin: 30px;
+    color: #2c5530;
     animation: fadeInUp2 1.5s ease-out;
     background: rgba(255, 255, 255, 0.5);
 }
 
-.key-points {
-    display: block;
+/* .key-points {
+    display: grid;
     font-weight: 500;
-    margin: 150px 60px;
+    margin: 150px 20px;
     animation: fadeInUp3 1s ease-out;
 }
 
 .key-points li {
     border-radius: 10px;
-    width: 600px;
+    width: 570px;
     background: rgba(255, 255, 255, 0.5);
     display: inline-block;
     margin: 10px 10px;
     padding-left: 10px;
+} */
+
+.key-points {
+    list-style: none;
+    margin-left: 40px;
+    margin-bottom: 10px;
+    margin-top: 100px;
+    padding-left: 10px;
+    position: relative;
+    animation: fadeInUp3 1s ease-out;
+}
+
+.key-points li {
+    margin: 20px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.key-points li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #4a7c59;
+    font-weight: bold;
 }
