@@ -168,6 +168,10 @@ body {
     z-index: -1;
 }
 
+.naturalbackground ul {
+    list-style: circle;
+}
+
 /* .naturaltext {
     position: absolute;
     top: 50%;
@@ -759,4 +763,13 @@ p {
     font-weight: 500;
     margin: 150px 60px;
     animation: fadeInUp3 1s ease-out;
+}
+
+.key-points li {
+    border-radius: 10px;
+    width: 600px;
+    background: rgba(255, 255, 255, 0.5);
+    display: inline-block;
+    margin: 10px 10px;
+    padding-left: 10px;
 }
