@@ -219,39 +219,6 @@ p {
     text-align: center;
 }
 
-.specialty-conditions {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 25px;
-    margin-bottom: 40px;
-}
-
-.condition-item {
-    background: #fff;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-    border-top: 3px solid #4a7c59;
-    transition: all 0.3s;
-}
-
-.condition-item:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-}
-
-.condition-title {
-    font-size: clamp(1.2rem, 3.5vw, 1.3rem);
-    color: #2c5530;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-
-.condition-desc {
-    color: #666;
-    font-size: clamp(0.9rem, 3vw, 1rem);
-}
-
 /* About Section */
 .about-grid {
     display: grid;
@@ -402,7 +369,7 @@ p {
 }
 
 /* Services Section */
-.services-grid {
+.specialty-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     /* Increased min-width for uniformity */
@@ -412,7 +379,7 @@ p {
     border-radius: 10px;
 }
 
-.service-card {
+.specialty-card {
     background: #fff;
     padding: 15px;
     border-radius: 10px;
@@ -426,17 +393,17 @@ p {
     justify-content: space-between;
 }
 
-.service-card:hover {
+.specialty-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
-.service-card h3 {
+.specialty-card h3 {
     font-size: clamp(1.2rem, 3vw, 1.4rem);
     /* Slightly smaller for uniformity */
 }
 
-.service-card p {
+.specialty-card p {
     font-size: clamp(0.9rem, 2.5vw, 1rem);
     flex-grow: 1;
     /* Ensure content fills space */
@@ -629,13 +596,12 @@ section {
     }
 
     .about-grid,
-    .services-grid,
-    .contact-info,
-    .specialty-conditions {
+    .specialty-grid,
+    .contact-info {
         grid-template-columns: 1fr;
     }
 
-    .service-card {
+    .specialty-card {
         min-height: 180px;
         /* Slightly smaller for mobile */
     }
@@ -671,13 +637,12 @@ section {
         font-size: clamp(0.9rem, 3vw, 1rem);
     }
 
-    .service-card,
-    .contact-card,
-    .condition-item {
+    .specialty-card,
+    .contact-card {
         padding: 15px;
     }
 
-    .service-card {
+    .specialty-card {
         min-height: 160px;
         /* Smaller for smaller screens */
     }
