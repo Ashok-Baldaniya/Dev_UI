@@ -1,4 +1,3 @@
-// Navbar scroll effect
 window.addEventListener('scroll', () => {
     const navbar = document.getElementById('navbar');
     if (window.scrollY > 50) {
@@ -8,17 +7,17 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Active nav item
 document.querySelectorAll('.nav-item').forEach(item => {
     item.addEventListener('click', (e) => {
         if (e.target.getAttribute('href').includes('#')) {
             document.querySelectorAll('.nav-item').forEach(nav => nav.classList.remove('active'));
             e.target.classList.add('active');
+            document.getElementById('nav-menu').classList.remove('active');
+            document.getElementById('hamburger').textContent = '☰';
         }
     });
 });
 
-// Update active nav on scroll
 window.addEventListener('scroll', () => {
     const sections = document.querySelectorAll('section');
     const navItems = document.querySelectorAll('.nav-item');
@@ -26,7 +25,6 @@ window.addEventListener('scroll', () => {
     let current = '';
     sections.forEach(section => {
         const sectionTop = section.offsetTop;
-        const sectionHeight = section.clientHeight;
         if (scrollY >= (sectionTop - 200)) {
             current = section.getAttribute('id');
         }
@@ -38,4 +36,11 @@ window.addEventListener('scroll', () => {
             item.classList.add('active');
         }
     });
+});
+
+document.getElementById('hamburger').addEventListener('click', () => {
+    const navMenu = document.getElementById('nav-menu');
+    navMenu.classList.toggle('active');
+    const hamburger = document.getElementById('hamburger');
+    hamburger.textContent = navMenu.classList.contains('active') ? '✕' : '☰';
 });
