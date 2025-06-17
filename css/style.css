@@ -605,6 +605,7 @@ section {
     .naturaltext {
         font-size: clamp(1.8rem, 5.5vw, 2.8rem);
         padding: 12px 25px;
+        text-align: center;
     }
 
     .description {
@@ -667,6 +668,7 @@ section {
     .naturaltext {
         font-size: clamp(1.6rem, 4.5vw, 2.2rem);
         padding: 0px 20px;
+        text-align: center;
     }
 
     .description {
